@@ -1,7 +1,6 @@
 <?php
 
-function csv_to_array(array $data): array {
-    $headers = explode(",", array_shift($data));
+function csv_to_array(array $data, array $headers): array {
     $result = [];
 
     foreach($data as $row) {
