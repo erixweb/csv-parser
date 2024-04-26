@@ -1,7 +1,7 @@
 <?php
-# header("Content-Type: text/json");
+header("Content-Type: text/json");
 
-require_once("../../utils/csv.php");
+require_once("../utils/csv.php");
 try {
     $csv = file_get_contents($_FILES["file"]["tmp_name"]);
 
